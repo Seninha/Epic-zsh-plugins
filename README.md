@@ -76,10 +76,10 @@ using movement keys like `Arrow Keys`, `Vim hjkl`, `PG Up`, `PG Down`, `Home`
 and `End`
 
 
-envvars
+history
 -------
 
-Some basic environment variables (just path, fpath, `$EDITOR` and a few more)
+Some history improvement, like history appending.
 
 
 modules
