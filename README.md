@@ -19,7 +19,7 @@ To install all plugins, add the following line to your .zshrc:
 	antigen bundle Seninha/epic-zsh-plugins
 ```
 
-To install a single plugin (like **vimBindkeys.zsh**), add the following line to
+To install a single plugin (like **vimBindkeys**), add the following line to
 your .zshrc:
 
 ``` zsh
@@ -124,3 +124,4 @@ are the following (others rules can be read [Here][Unix]):
 - **Transparency:** Each plugin is designed for visibility and discoverability by
   writing in a way that the code can lucidly be seen and understood by anyone.
 
+[Unix]: https://en.wikipedia.org/wiki/Unix_philosophy
