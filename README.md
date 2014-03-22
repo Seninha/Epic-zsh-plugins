@@ -6,7 +6,7 @@ transparent and VIM-ORIENTED zsh plugins that improve the basic behavior of the
 Zsh in several ways.
 
 
-Instalation
+Installation
 -----------
 
 
@@ -16,20 +16,24 @@ Instalation
 To install all plugins, add the following line to your .zshrc:
 
 ``` zsh
-	antigen bundle Seninha/epic-zsh-plugins
+	antigen bundle Seninha/Epic-zsh-plugins
 ```
 
 To install a single plugin (like **vimBindkeys**), add the following line to
 your .zshrc:
 
 ``` zsh
-	antigen bundle Seninha/epic-zsh-plugins/vimBindkeys
+	antigen bundle Seninha/Epic-zsh-plugins/vimBindkeys
 ```
 
 
 ### Manually Install:
 
-You must clone the git repository and source the files manually.
+You must clone the git repository and source the file `init.zsh` manually:
+
+```zsh
+	git clone http://github.com/Seninha/Epic-zsh-plugins
+```
 
 
 Plugin Index
