@@ -91,7 +91,6 @@ type vimpager &> /dev/null &&   alias more='vimpager'
 type vimpager &> /dev/null &&   alias less='vimpager'
 type vimpager &> /dev/null &&   alias most='vimpager'
 type vimpager &> /dev/null &&   alias view='vimpager'
-type vimcat &> /dev/null &&     alias cat='vimcat'
 
 ## Shortcuts
 type vim &> /dev/null &&        alias :v='vim'
