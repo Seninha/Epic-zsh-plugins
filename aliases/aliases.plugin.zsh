@@ -102,8 +102,6 @@ type vim &> /dev/null &&        alias V='vim'
 # Development
 # ==============================================================================
 
-type colorgcc &> /dev/null &&   alias gcc='colorgcc'
-
 type i486-mingw32-gcc &> /dev/null &&      alias wgcc='i486-mingw32-gcc'
 
 type i486-mingw32-gcc &> /dev/null &&      function wcc-ansi {
