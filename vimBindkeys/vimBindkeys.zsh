@@ -77,6 +77,7 @@ bindkey -a "'"		quote-line				# M'
 bindkey -a '"'		quote-region				# "
 bindkey -a "#"		pound-insert				# #
 bindkey -a "[2~"	vi-insert				# INSERT
+bindkey -a " "	vi-insert				# Esc space
 bindkey -a "z"		spell-word				# z
 bindkey -a "u"		undo					# u
 bindkey -a ""		redo					# C-R
