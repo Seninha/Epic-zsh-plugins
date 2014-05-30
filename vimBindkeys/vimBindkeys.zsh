@@ -50,12 +50,12 @@ bindkey " "		magic-space				# SPACE
 ## History Movement
 bindkey -a "[5~"	beginning-of-buffer-or-history		# PGUP
 bindkey -a "[6~"	end-of-buffer-or-history		# PGDOWN
-bindkey -a "k"		history-beginning-search-backward	# k
-bindkey -a "j"		history-beginning-search-forward	# j
+bindkey -a "k"		history-search-backward			# k
+bindkey -a "j"		history-search-forward			# j
 bindkey -a "gg"		beginning-of-buffer-or-history		# gg
 bindkey -a "G"		end-of-buffer-or-history		# G
-bindkey -a "[A"	history-beginning-search-backward	# UP
-bindkey -a "[B"	history-beginning-search-forward	# DOWN
+# bindkey -a "[A"	history-beginning-search-backward	# UP
+# bindkey -a "[B"	history-beginning-search-forward	# DOWN
 bindkey -a ""		history-incremental-search-backward	# C-R
 bindkey -a "\M-OD"	backward-word				# M-LEFT
 bindkey -a "\M-OC"	forward-word				# M-RIGHT
