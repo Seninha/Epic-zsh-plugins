@@ -106,32 +106,32 @@ type i486-mingw32-gcc &> /dev/null &&      alias wgcc='i486-mingw32-gcc'
 
 type i486-mingw32-gcc &> /dev/null &&      function wcc-ansi {
 	args=$*
-	in=$(echo $args | sed -r "s/.* ([^ 	]*\.c).*/\1/")
-	flags=$(echo $args | sed -r "s/${in}//")
+	in="${@: -1}"
+	flags="${@:1:-2}"
 	out=$(echo -n "$in" | sed -r 's/\.c$//')
 	wgcc -g -ansi -Wall $flags "$in" -o "${out}.exe"
 }
 
 type i486-mingw32-gcc &> /dev/null &&      function wcc {
 	args=$*
-	in=$(echo $args | sed -r "s/.* ([^ 	]*\.c).*/\1/")
-	flags=$(echo $args | sed -r "s/${in}//")
+	in="${@: -1}"
+	flags="${@:1:-2}"
 	out=$(echo -n "$in" | sed -r 's/\.c$//')
 	wgcc -g -Wall $flags "$in" -o "${out}.exe"
 }
 
 type gcc &> /dev/null &&        function cc-ansi {
 	args=$*
-	in=$(echo $args | sed -r "s/.* ([^ 	]*\.c).*/\1/")
-	flags=$(echo $args | sed -r "s/${in}//")
+	in="${@: -1}"
+	flags="${@:1:-2}"
 	out=$(echo -n "$in" | sed -r 's/\.c$//')
 	gcc -Og -ansi -Wall $flags "$in" -o $out
 }
 
 type gcc &> /dev/null &&        function cc {
 	args=$*
-	in=$(echo $args | sed -r "s/.* ([^ 	]*\.c).*/\1/")
-	flags=$(echo $args | sed -r "s/${in}//")
+	in="${@: -1}"
+	flags="${@:1:-2}"
 	out=$(echo -n "$in" | sed -r 's/\.c$//')
 	gcc -Og -std=gnu99 -Wall $flags "$in" -o $out
 }
