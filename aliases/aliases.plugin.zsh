@@ -170,7 +170,6 @@ type history &> /dev/null &&    function hist {
 
 #
 ## Behavioral Improvements
-type pinfo &> /dev/null &&      alias info='pinfo'
 type egrep &> /dev/null &&      alias grep='egrep'
 type nano &> /dev/null &&       alias nano='nano -w'
 type sudo &> /dev/null &&       alias sudo='sudo '		# Makes sudo suports alias expansion ;-)
