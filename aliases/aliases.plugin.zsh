@@ -40,7 +40,8 @@ type firefox &> /dev/null &&    alias -s edu=$BROWSER
 # Output Improvement 
 # ==============================================================================
 
-type diff &> /dev/null &&       alias diff='colordiff'
+type pinfo &> /dev/null &&      alias info='pinfo'
+type colordiff &> /dev/null &&  alias diff='colordiff'
 type df &> /dev/null &&         alias df='df -h'			# Human redable
 type du &> /dev/null &&         alias du='du -c -h'			# Human redable
 type egrep &> /dev/null &&      alias egrep='egrep --color=auto'	# Colored egrep
